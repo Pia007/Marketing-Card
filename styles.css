@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700&family=Work+Sans:wght@500;700&display=swap');
+ :root {
+    --grayish-blue: hsl(218, 22%, 67%);
+    --my-darkgreen: hsl(179, 63%, 38%);
+    --cyan-blue: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+}
+
+
+/* APPEARANCE STYLES*/
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 275px 275px;
+    background-color: var(--light-gray);
+}
+
+.box {
+    font-size: 50px;
+    color: white;
+    padding: 45px;
+    font-family: 'Karla', 'Work-Sans';
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+h1 {
+    color: var(--my-darkgreen);
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.box-1>h2 {
+    padding-bottom: 0px;
+}
+.container {
+    display: flex;
+    height: calc(100vw-80vh);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px  hsla(218, 22%, 67%, 0.5);
+    border-style: 5px solid var(--light-gray);
+    border-radius: 13px;
+}
+
+.box-1 h2 {
+    color: var(--bright-yellow);
+    font-size: 36px;
+}
+
+.box-1 p {
+    color: var(--grayish-blue);
+    font-size: 20px;
+}
+
+.box-1 {
+    background: white;
+    align-self: flex-start;
+    flex: 1 1 100%;
+    padding-top: 15px;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-self: center;
+    flex: 1 1 25%;
+    line-height: 1.0;
+    padding-top: 20px;
+    background-color: var(--my-darkgreen);
+}
+
+.cash {
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#sub-fee {
+    font-size: 35px;
+    padding-top: 0px;
+    padding-right: 5px;
+}
+
+.per {
+    font-size: 18px;
+    padding: 10px;
+    place-self: center;
+}
+
+.full {
+    font-size: 20px;
+    padding: -10px;
+    place-self: flex-start;
+    margin-bottom: 50px;
+}
+
+.box-3 {
+    flex: 1;
+    display: grid;
+    grid-template-rows: (8, 1fr);
+    flex-wrap: none;
+    flex: 1 1 25%;
+    line-height: .65;
+    padding-top: 20px;
+    background-color: var(--cyan-blue);
+}
+
+.box-3>.sbright>p {
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--bright-yellow);
+    border: 2px solid var(--cyan-blue);
+    box-shadow: 1px 1px 20px hsl(179, 69%, 45%, 0.1);
+    border-radius: 8px;
+    width: auto;
+    height: 70px;
+    align-self: inherit;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
