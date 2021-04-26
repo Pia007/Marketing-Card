@@ -1,77 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700&family=Work+Sans:wght@500;700&display=swap');
- :root {
+
+/* Setting Sariable */
+:root {
     --grayish-blue: hsl(218, 22%, 67%);
     --my-darkgreen: hsl(179, 63%, 38%);
     --cyan-blue: hsl(179, 62%, 43%);
     --bright-yellow: hsl(71, 73%, 54%);
     --light-gray: hsl(204, 43%, 93%);
+   --light-gray: hsl(204, 43%, 93%);
+    --blue-at: hsl(226, 77%, 45%);
+
+    --Karla:'Karla', 'Work-Sans';
+    --font-xsm: .8125rem;
+    --font-sm: 1.4rem;
+    --font-reg: 1.25rem;
+    --font-med: 1.875rem;
+    --font-lg: 2.5rem;
+    --font-wt-norm: 500;
+    --font-wt-lg: 700;
+}
+* {
+    margin: 0;
+    padding: 0
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
 
 /* APPEARANCE STYLES*/
 
 body {
     display: flex;
-    box-sizing: border-box;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    height: auto;
-    margin: 275px 275px;
     background-color: var(--light-gray);
 }
 
 .box {
-    font-size: 50px;
+    font-family: var(--Karla);
+    font-weight: 700;
     color: white;
-    padding: 45px;
-    font-family: 'Karla', 'Work-Sans';
-    font-weight: bold;
-    box-sizing: border-box;
-    width: 300px;
+    padding: 3rem; 
 }
 
 h1 {
     color: var(--my-darkgreen);
-    font-size: 40px;
+    font-size: var(--font-med);
+    margin-top: 1rem;
 }
 
 h2 {
-    font-size: 30px;
-    padding-bottom: 10px;
+    font-size: var(--font-sm);
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
 }
-.box-1>h2 {
-    padding-bottom: 0px;
-}
+
+
 .container {
+    width: 52rem;
     display: flex;
-    height: calc(100vw-80vh);
+    background: white; 
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 20px  hsla(218, 22%, 67%, 0.5);
-    border-style: 5px solid var(--light-gray);
-    border-radius: 13px;
+    box-shadow: 0 0 .625rem  hsla(218, 22%, 67%, 0.5);
+    border-style: .3125rem solid var(--light-gray);
+    border-radius: .5rem;
 }
 
 .box-1 h2 {
     color: var(--bright-yellow);
-    font-size: 36px;
+    padding-bottom: 1.25rem;
 }
 
 .box-1 p {
     color: var(--grayish-blue);
-    font-size: 20px;
+    font-size: var(--font-reg);
+    font-weight: var(--font-wt-norm);
+    line-height: 1.5;
 }
 
 .box-1 {
     background: white;
     align-self: flex-start;
     flex: 1 1 100%;
-    padding-top: 15px;
+
 }
 
 .box-2 {
@@ -81,64 +106,140 @@ h2 {
     justify-self: center;
     flex: 1 1 25%;
     line-height: 1.0;
-    padding-top: 20px;
+    padding-top: .9375rem;
     background-color: var(--my-darkgreen);
 }
 
 .cash {
-    font-size: 35px;
+    font-size: var(--font-lg);
     display: flex;
     justify-content: flex-start;
     align-self: flex-start;
-    margin-top: 0px;
-    margin-bottom: 5px;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
 }
 
 #sub-fee {
-    font-size: 35px;
-    padding-top: 0px;
-    padding-right: 5px;
+    font-size: var(--font-lg);
+    padding-right: .3125;
 }
 
 .per {
-    font-size: 18px;
-    padding: 10px;
+    font-size: var(--font-sm);
+    padding: 0.625rem;
     place-self: center;
 }
 
 .full {
-    font-size: 20px;
-    padding: -10px;
-    place-self: flex-start;
-    margin-bottom: 50px;
+    font-size: var(--font-reg);
+    margin-bottom: 2.5rem;
 }
 
 .box-3 {
-    flex: 1;
     display: grid;
     grid-template-rows: (8, 1fr);
     flex-wrap: none;
     flex: 1 1 25%;
-    line-height: .65;
-    padding-top: 20px;
+    
+    padding-top: .9375rem;
     background-color: var(--cyan-blue);
 }
-
+.box-3 h2{
+    align-self: start;
+    padding-top: 0;
+}
 .box-3>.sbright>p {
-    font-size: 20px;
+    font-size: 1.15rem;
+    line-height: 1.5;
 }
 
 .btn {
-    font-size: 25px;
+    font-size: var(--font-reg);
     font-weight: bold;
     color: white;
     background-color: var(--bright-yellow);
-    border: 2px solid var(--cyan-blue);
-    box-shadow: 1px 1px 20px hsl(179, 69%, 45%, 0.1);
-    border-radius: 8px;
+    border: .125rem solid var(--cyan-blue);
+    box-shadow: .0625rem .0625rem 1.25rem hsl(179, 69%, 45%, 0.1);
+    border-radius: .5rem;
     width: auto;
-    height: 70px;
-    align-self: inherit;
+    height: 4rem;
     justify-content: flex-end;
-    margin-bottom: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.5rem;
+    font-size: var(--font-sm);
+    text-align: center; 
+}
+
+.attribution a {
+    color: var(--blue-at);
+}
+
+
+@media (max-width: 28.125em) {
+
+    .container {
+        display: flex;
+        flex-direction: column;  
+        width: 90%;
+        height: auto;    
+    }
+    .box {
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: var(--font-sm);
+    }
+    h2 {
+        font-size: 1.25rem;
+        padding-bottom: .715rem;
+    }
+    .box-1  {
+        margin: 1rem .5rem 1rem .5rem;
+    }
+    .box-1 p {
+        font-size: .9575rem;
+        line-height: 1.75;
+    }
+    .box-2  {
+        padding: .5rem 1.5rem 1.5rem 1.5rem;  
+    }
+    p .cash {
+        font-size: var(--font-med);
+        margin-top: .5rem;
+        margin-bottom: 0;
+    }
+    #sub-fee {
+        font-size: var(--font-med);
+        padding-right: .3125rem;
+        padding-top: 0.325rem;
+    }
+    .per {
+        font-size: var(--font-reg);
+        padding: 0.625rem;
+        padding-left: .875rem;
+        place-self: center;
+        align-self: center;
+    }
+    .full {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    .sbright p {
+        font-size: var(--font-xsm);
+        line-height: 1;
+    }
+    .box-3  {
+       
+       padding-top: .5rem;
+    } 
+    .attribution {
+        font-size: .875rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
