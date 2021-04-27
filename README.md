@@ -1,2 +1,3 @@
-# Marketing-Card-RA
-This is my inaugural HTML & CSS project.
+# Single-Price-Component 
+This is my inaugural HTML & CSS challenge.
+
