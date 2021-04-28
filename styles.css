@@ -30,6 +30,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: var(--font-xsm);
+    position: relative;
+
 html,
 body {
     height: 100%;
