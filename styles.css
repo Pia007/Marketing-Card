@@ -7,7 +7,7 @@
     --cyan-blue: hsl(179, 62%, 43%);
     --bright-yellow: hsl(71, 73%, 54%);
     --light-gray: hsl(204, 43%, 93%);
-   --light-gray: hsl(204, 43%, 93%);
+    --light-gray: hsl(204, 43%, 93%);
     --blue-at: hsl(226, 77%, 45%);
 
     --Karla:'Karla', 'Work-Sans';
@@ -19,6 +19,7 @@
     --font-wt-norm: 500;
     --font-wt-lg: 700;
 }
+
 * {
     margin: 0;
     padding: 0
@@ -33,6 +34,7 @@
 html {
     font-size: var(--font-xsm);
     position: relative;
+}
 
 html,
 body {
@@ -100,7 +102,6 @@ h2 {
     background: white;
     align-self: flex-start;
     flex: 1 1 100%;
-
 }
 
 .box-2 {
@@ -144,14 +145,15 @@ h2 {
     grid-template-rows: (8, 1fr);
     flex-wrap: none;
     flex: 1 1 25%;
-    
     padding-top: .9375rem;
     background-color: var(--cyan-blue);
 }
+
 .box-3 h2{
     align-self: start;
     padding-top: 0;
 }
+
 .box-3>.sbright>p {
     font-size: 1.15rem;
     line-height: 1.5;
@@ -183,9 +185,8 @@ footer {
     color: var(--blue-at);
 }
 
-
+/* Styling for devices with a max-width of 450px */
 @media (max-width: 28.125em) {
-
     .container {
         display: flex;
         flex-direction: column;  
